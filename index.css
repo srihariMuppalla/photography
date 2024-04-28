@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+
 }
 
 .carousel-container {
@@ -118,7 +119,11 @@
     .banner-sec {
         width: 100%;
         height: 100%;
-        max-width: 800px;
+        max-width: 996px;
+    }
+
+    .banner-container {
+        width: 100%!important;
     }
 
     .banner-content-sec{
@@ -128,7 +133,7 @@
     .slide-images-sec {
         width: 100%;
         height: 100%;
-        max-width: 800px;
+        max-width: 996px;
     }
 
     .slider-buttons{
@@ -237,7 +242,7 @@
 @media screen and (max-width: 768px) {
 
     .nav-sec-container{
-        min-width: 360px;
+        min-width: 300px;
     }
 
     .mobile-hide{
@@ -296,6 +301,10 @@
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+      }
+
+      .gallery-container h1 {
+        margin: 20px 0px 0px 0px;
       }
 }
 
