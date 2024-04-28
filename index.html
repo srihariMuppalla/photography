@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        <div class="banner-container">
+            <div class="carousel-container">
+                <div class="slide-images-sec">
+                    <div class="slider-image slider-active"><img src="images/h1.jpg" /></div>
+                    <div class="slider-image"><img src="images/h4.jpg" /></div>
+                    <div class="slider-image"><img src="images/h6.jpg" /></div>
+                </div>
+                <div class="banner-sec">
+                    <div class="nav-sec-container">
+                        <div class="logo">Srihari <span class="mobile-hide">Muppalla</span></div>
+                        <div class="navigation-elements">
+                            <div class="mobile-menu-icon" onclick="hamMenu()">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <ul class="" id="mobileView">
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Gallery</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner-content-sec">
+                        <h1>Srihari Muppalla</h1>
+                        <h2>Fullstack Developer</h2>
+                    </div>
+                    <div class="slider-buttons">
+                        <hr />
+                        <div class="button-alignment">
+                            <button type="button" onclick="prevSlide()">&#x2190;</button>
+                            <div>
+                                <div class="slider-number number-active">01 / 03</div>
+                                <div class="slider-number">02 / 03</div>
+                                <div class="slider-number">03 / 03</div>
+                            </div>
+                            <button type="button" onclick="nextSlide()">&#x2192;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <h1>Gallery</h1>
+            <div class="row"> 
+                <div class="column">
+                  <img src="images/v1.jpg" style="width:100%">
+                  <img src="images/v2.jpg" style="width:100%">
+                  <img src="images/v10.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="images/v8.jpg" style="width:100%">
+                  <img src="images/v9.jpg" style="width:100%">
+                  <img src="images/v28.jpg" style="width:100%">
+                </div>  
+                <div class="column">
+                  <img src="images/v14.jpg" style="width:100%">
+                  <img src="images/v28.jpg" style="width:100%">
+                  <img src="images/v3.jpg" style="width:100%">
+                </div>
+              </div>
+        </div>
+        <div class="testimonial-container">
+            <h1>Testimonials</h1>
+            <div class="testimonial-slider-buttons">
+                <div class="button-alignment">
+                    <button type="button" onclick="prevTestSlide()">&#x2190;</button>
+                    <button type="button" onclick="nextTestSlide()">&#x2192;</button>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial testimonial-active">
+                    <div class="testimonials-section">
+                        <div class="testimonial-content-sec">
+                            <h2>Testimonial 1</h2>
+                            <p>"Nestled within the heart of untouched wilderness, lies a landscape of unparalleled majesty and beauty, 
+                                captured perfectly in this breathtaking photograph. Towering mountain peaks, cloaked in a blanket of 
+                                pristine snow, reach towards the heavens, their rugged contours etched against the canvas of the sky. 
+                                Below, a tranquil lake mirrors the splendor above, its mirrored surface reflecting the grandeur of the 
+                                surrounding landscape. The scene is one of pure, unspoiled beauty, a testament to the awe-inspiring power 
+                                of nature's handiwork.<br /><br />
+
+                                As the photographer's lens captures the scene in all its glory, viewers are transported to a world untouched 
+                                by human hands, where the rhythms of nature reign supreme. Each element of the landscape, from the snow-capped
+                                 peaks to the tranquil waters below, tells a story of resilience and strength, of the timeless beauty that 
+                                 endures in the face of adversity. It's a scene of unparalleled majesty and grandeur, a reminder of the 
+                                 awe-inspiring power of the natural world and the need to preserve and protect it for generations to come."</p>
+                        </div>
+                        <div class="testimonial-image-sec">
+                            <img src="images/h13.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonials-section">
+                        <div class="testimonial-content-sec">
+                            <h2>Testimonial 2</h2>
+                            <p>"As the sun gently descends towards the horizon, nature undergoes a breathtaking transformation, 
+                                bathed in the soft, golden light of the magical hour known as the golden hour. In this captivating photograph, 
+                                the photographer transports viewers to a serene countryside scene, where a lone tree stands as a silent 
+                                sentinel amidst rolling hills and fields of gold. The warm, honeyed tones of the setting sun cast a luminous 
+                                glow across the landscape, infusing every blade of grass and leaf with a radiant aura. Shadows stretch long and 
+                                languid, adding depth and dimension to the scene, while the sky above is painted in hues of pink, orange, 
+                                and lavender, creating a canvas of celestial beauty.<br /><br />
+
+                                Against this backdrop of nature's splendor, the solitary tree becomes a focal point of the composition, 
+                                its gnarled branches reaching towards the heavens in silent reverence. Each leaf and twig is bathed in the 
+                                golden light, casting intricate patterns of shadow and light on the ground below. The scene is imbued with a 
+                                sense of tranquility and timelessness, inviting viewers to pause and reflect on the beauty of the natural world. 
+                                It's a moment frozen in time, a fleeting glimpse of the sublime beauty that awaits those who take the time 
+                                to appreciate the simple wonders of the world around them."</p>
+                        </div>
+                        <div class="testimonial-image-sec">
+                            <img src="images/h16.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonials-section">
+                        <div class="testimonial-content-sec">
+                            <h2>Testimonial 3</h2>
+                            <p>"In the warm embrace of a golden sunset, a newlywed couple shares a tender moment of love and connection, 
+                                their hearts intertwined in an eternal bond. Against the backdrop of a sky ablaze with the fiery hues of dusk, 
+                                the couple's silhouettes are cast in sharp relief, their profiles illuminated by the soft, golden light. 
+                                With arms wrapped around each other in a tight embrace, they stand as a testament to the power of love and 
+                                the promise of a lifetime together. Their smiles speak volumes, radiating joy and happiness as they gaze into 
+                                each other's eyes.<br /><br />
+
+                                As the sun dips below the horizon, painting the sky in shades of pink and orange, the couple's love shines 
+                                brightly, a beacon of hope and happiness in a world filled with uncertainty. In this moment, surrounded by 
+                                the beauty of nature and the warmth of each other's presence, time seems to stand still, allowing them to 
+                                savor the magic of the moment. It's a scene of pure, unadulterated joy, a celebration of love in all its 
+                                infinite glory. And as the last rays of sunlight fade into darkness, the couple knows that their love will 
+                                endure, strong and unwavering, for all eternity."</p>
+                        </div>
+                        <div class="testimonial-image-sec">
+                            <img src="images/h15.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonials-section">
+                        <div class="testimonial-content-sec">
+                            <h2>Testimonial 4</h2>
+                            <p>"In the heart of the bustling metropolis, where skyscrapers pierce the sky and neon lights paint the streets 
+                                in vivid hues, lies a scene of vibrant energy and pulsating life. Against the backdrop of the city skyline, 
+                                illuminated by the soft glow of a thousand lights, the photographer captures a moment of urban magic. Streets 
+                                teeming with life, alive with the hustle and bustle of the city, become a stage for a symphony of light and 
+                                color. Each flickering light, each vibrant sign, tells a story of life in the city, of dreams pursued and 
+                                ambitions realized.<br /><br />
+
+                                As the photographer's lens captures the scene, viewers are drawn into the frenetic energy of urban life, 
+                                where every corner holds the promise of adventure and excitement. From the towering skyscrapers to the 
+                                bustling streets below, the city comes alive in a kaleidoscope of color and motion, a testament to the 
+                                indomitable spirit of human ingenuity. It's a scene of boundless energy and excitement, a celebration of 
+                                the vibrancy and diversity of urban culture. And as the night unfolds, casting its spell over the city, 
+                                the photographer's lens continues to capture the magic, preserving for eternity a moment in time that will 
+                                never fade."</p>
+                        </div>
+                        <div class="testimonial-image-sec">
+                            <img src="images/h14.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="photography-section">
+            <h1>Photography</h1>
+            <p>In the heart of the bustling metropolis, where skyscrapers pierce the sky and neon lights paint the streets 
+                in vivid hues, lies a scene of vibrant energy and pulsating life. Against the backdrop of the city skyline, 
+                illuminated by the soft glow of a thousand lights, the photographer captures a moment of urban magic. Streets 
+                teeming with life, alive with the hustle and bustle of the city, become a stage for a symphony of light and 
+                color. Each flickering light, each vibrant sign, tells a story of life in the city, of dreams pursued and 
+                ambitions realized.
+
+                As the photographer's lens captures the scene, viewers are drawn into the frenetic energy of urban life, 
+                where every corner holds the promise of adventure and excitement. From the towering skyscrapers to the 
+                bustling streets below, the city comes alive in a kaleidoscope of color and motion, a testament to the 
+                indomitable spirit of human ingenuity. It's a scene of boundless energy and excitement, a celebration of 
+                the vibrancy and diversity of urban culture. And as the night unfolds, casting its spell over the city, 
+                the photographer's lens continues to capture the magic, preserving for eternity a moment in time that will 
+                never fade.<br /><br />
+
+                In the warm embrace of a golden sunset, a newlywed couple shares a tender moment of love and connection, 
+                their hearts intertwined in an eternal bond. Against the backdrop of a sky ablaze with the fiery hues of dusk, 
+                the couple's silhouettes are cast in sharp relief, their profiles illuminated by the soft, golden light. 
+                With arms wrapped around each other in a tight embrace, they stand as a testament to the power of love and 
+                the promise of a lifetime together. Their smiles speak volumes, radiating joy and happiness as they gaze into 
+                each other's eyes.
+
+                As the sun dips below the horizon, painting the sky in shades of pink and orange, the couple's love shines 
+                brightly, a beacon of hope and happiness in a world filled with uncertainty. In this moment, surrounded by 
+                the beauty of nature and the warmth of each other's presence, time seems to stand still, allowing them to 
+                savor the magic of the moment. It's a scene of pure, unadulterated joy, a celebration of love in all its 
+                infinite glory. And as the last rays of sunlight fade into darkness, the couple knows that their love will 
+                endure, strong and unwavering, for all eternity.
+            </p>
+            <button>Read more&nbsp;&nbsp;&#x2192;</button>
+        </div>
+        <div class="product-section">
+            <div class="product-inner">
+                <div class="product-image-sec">
+                    <img src="images/h16.jpg" />
+                </div>
+                <div class="product-content-sec">
+                    <h2>Capturing the Majesty of Mother Nature</h2>
+                    <p>
+                        Nature photography is an art form that allows us to explore and appreciate the beauty of the natural world. 
+                        From towering mountains to tranquil forests, from vast oceans to intricate patterns in a single leaf, nature 
+                        offers an endless array of subjects waiting to be captured through the lens of a camera.
+
+                        Each photograph tells a story, offering a glimpse into the wonders of our planet and the intricate ecosystems 
+                        that call it home. Whether it's the vibrant colors of a sunrise painting the sky with hues of pink and gold, 
+                        or the delicate balance of life and death captured in the image of a predator stalking its prey, nature photography 
+                        has the power to evoke emotion and inspire awe.<br /><br />
+
+                        But nature photography is more than just snapping pictures of pretty landscapes. It's about connecting with 
+                        the world around us, immersing ourselves in the sights, sounds, and smells of nature, and capturing moments 
+                        that might otherwise go unnoticed. It's about patience and perseverance, waiting for the perfect light, the 
+                        perfect moment, the perfect shot.<br /><br />
+
+                        Through nature photography, we not only document the beauty of our planet, but we also become advocates for its 
+                        preservation. By sharing our photos with the world, we raise awareness about environmental issues, inspire others 
+                        to explore and appreciate nature, and encourage conservation efforts to protect the places and species that are so 
+                        dear to us.
+
+                        So grab your camera, venture into the great outdoors, and let nature be your muse. There's a world of wonder 
+                        waiting to be discovered, and it's up to us to capture its majesty and share it with the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
