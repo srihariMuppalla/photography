@@ -61,6 +61,7 @@
 .number-active{
     display: block;
     color: #ffffff;
+    margin-top: 10px;
 }
 
 .slider-buttons{
@@ -79,7 +80,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 10px 0px 20px 0px;
 }
 
 .button-alignment button {
@@ -134,6 +135,9 @@
         margin-top: 30%;
         position: relative;
     }
+    .button-alignment {
+        margin-top: 0px;
+    }
 }
 
 /* Navigation Section */
@@ -177,6 +181,11 @@
     cursor: pointer;
 }
 
+.navigation-elements ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
 .mobile-menu-icon {
     display: none;
 }
@@ -210,11 +219,18 @@
         right: 0;
         background-color: rgba(255, 255, 255, 0.2);
         width: 200px;
+        border-radius: 10px;
+        margin: 0px 20px 0px 0px;
+        z-index: 889;
     }
 
     .mobile-menu li {
         margin: 6px 10px 6px 10px;
         text-align: center;
+    }
+
+    .mobile-menu li:hover {
+        border-bottom: 1px solid #000;
     }
 }
 
