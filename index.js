@@ -42,29 +42,29 @@ setInterval(nextSlide, 3000);
 
 
   // JavaScript for Testimonial functionality
- 
+  let TestoCurrentIndex = 0;
   const testimonials = document.querySelectorAll('.testimonial');
   const totalTestimonials = testimonials.length;
  
   function showTestimonial(index) {
-    testimonials.forEach((slide, i) => {
-          if (i === index) {
-              slide.classList.add('testimonial-active');
+    testimonials.forEach((teso, j) => {
+          if (j === index) {
+              teso.classList.add('testimonial-active');
           } else {
-              slide.classList.remove('testimonial-active');
+              teso.classList.remove('testimonial-active');
           }
       });
   }
  
  
   function nextTestSlide() {
-      currentIndex = (currentIndex + 1) % totalTestimonials;
-      showTestimonial(currentIndex);
+      TestoCurrentIndex = (TestoCurrentIndex + 1) % totalTestimonials;
+      showTestimonial(TestoCurrentIndex);
   }
  
   function prevTestSlide() {
-      currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
-      showTestimonial(currentIndex);
+      TestoCurrentIndex = (TestoCurrentIndex - 1 + totalTestimonials) % totalTestimonials;
+      showTestimonial(TestoCurrentIndex);
   }
 
 
